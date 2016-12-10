@@ -1,5 +1,5 @@
 symbtab.cpp
-..\sources\symbtab.cpp(375): warning C4458: declaration of 'inxHash' hides class member
+..\sources\symbtab.cpp(374): warning C4458: declaration of 'inxHash' hides class member
 c:\users\verdeja\documents\puc\2016.2\teste\t4\sources\SymbTab.hpp(393): note: see declaration of 'SMT_SymbolTable::inxHash'
 tst_smt.cpp
 bcdarit.cpp

@@ -844,11 +844,17 @@
 
          if ( idAction == 1 )
          {
-
-/*
-  codigo removido
-*/
-               countRetrieveTrue = -1 ;
+            SMTE_SymbolTableElement * pSymbol =
+                   pSymbolTable->SearchSymbol( strlen( pSym ) , pSym ) ;
+            
+            if ( pSymbol != NULL )
+            {
+              countRetrieveTrue = 1;
+              return pSymbol;
+            } else {
+              countRetrieveTrue = -1 ;
+              return NULL;
+            }
 
          } // end selection: Perform action retrieve
 

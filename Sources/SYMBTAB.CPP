@@ -166,7 +166,6 @@
          } /* if */
          HasNext = ( pCollisionList->MoveElement( 1 ) == 1 ) ;
       } /* while */
-
       return NULL ;
 
    } // End of function: SMT  !Search symbol
@@ -273,7 +272,7 @@
 
          // Verify this collision list
 
-            SLS_SimpleList * pCurrentList = &( HashVector[ 0 /*inxList*/ ] ) ;
+            SLS_SimpleList * pCurrentList = &( HashVector[ inxList ] ) ;
             ASSERT_VER( pCurrentList->Verify( ModeParm ) , SMT_IncorrectCollisionList ) ;
 
             pCurrentList->MoveToFirst( ) ;
