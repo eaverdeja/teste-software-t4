@@ -434,7 +434,6 @@
             bool retVal = testGenerator.TST_GenerateAndTest( ) ;
 
             testGenerator.DisplayRandomTestResult( ) ;
-
             return CompareBool( retVal , VerifyCond ,
                       "Incorrect random test return" ) ;
 
@@ -813,7 +812,7 @@
                       pSymbolTable->InsertSymbol( pSymbol ) ;
 
             if ( ( pRetSymbol == NULL )
-              && ( vtSymbol[ inxSymb ].isInTable ))
+              && ( !vtSymbol[ inxSymb ].isInTable ))
             {
                vtSymbol[ inxSymb ].isInTable = true ;
                countInsertTrue++ ;
@@ -849,11 +848,11 @@
             
             if ( pSymbol != NULL )
             {
-              countRetrieveTrue = 1;
-              return pSymbol;
+              countRetrieveTrue += 1;
+              //return pSymbol;
             } else {
-              countRetrieveTrue = -1 ;
-              return NULL;
+              countRetrieveTrue += 1 ;
+              //return NULL;
             }
 
          } // end selection: Perform action retrieve
