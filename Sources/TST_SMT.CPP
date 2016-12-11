@@ -846,13 +846,25 @@
             SMTE_SymbolTableElement * pSymbol =
                    pSymbolTable->SearchSymbol( strlen( pSym ) , pSym ) ;
             
-            if ( pSymbol != NULL )
+            if ( ( pSymbol != NULL ) 
+              && ( vtSymbol[ inxSymb ].isInTable ) )
             {
               countRetrieveTrue += 1;
-              //return pSymbol;
-            } else {
+            } else if ( ( pSymbol == NULL ) 
+              && ( !vtSymbol[ inxSymb ].isInTable ) ){
               countRetrieveTrue += 1 ;
-              //return NULL;
+            } else {
+
+               if ( vtSymbol[ inxSymb ].isInTable )
+               {
+                  sprintf( msg , "Incorrect retrieve, >%s< is in table but was not found." , pSym ) ;
+               } else
+               {
+                  sprintf( msg , "Incorrect retrieve, >%s< is not in table but was found." , pSym ) ;
+               } /* if */
+
+               pTester->DisplayErrorMsg( msg ) ;
+               countError ++ ;
             }
 
          } // end selection: Perform action retrieve

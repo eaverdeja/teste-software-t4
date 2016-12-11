@@ -1,47 +1,5 @@
-symbtab.cpp
-..\sources\symbtab.cpp(374): warning C4458: declaration of 'inxHash' hides class member
-c:\users\verdeja\documents\puc\2016.2\teste\t4\sources\SymbTab.hpp(393): note: see declaration of 'SMT_SymbolTable::inxHash'
 tst_smt.cpp
-bcdarit.cpp
-breakpnt.cpp
-counters.cpp
-..\sources\counters.cpp(771): warning C4456: declaration of 'pCounter' hides previous local declaration
-..\sources\counters.cpp(764): note: see declaration of 'pCounter'
-disaster.cpp
-dynspac.cpp
-environ.cpp
-exceptn.cpp
-global.cpp
-gnrctest.cpp
-..\sources\gnrctest.cpp(341): warning C4459: declaration of 'dimCmd' hides global declaration
-..\sources\gnrctest.cpp(65): note: see declaration of 'dimCmd'
-..\sources\gnrctest.cpp(1347): warning C4456: declaration of 'numRead' hides previous local declaration
-..\sources\gnrctest.cpp(1273): note: see declaration of 'numRead'
-..\sources\gnrctest.cpp(2025): warning C4457: declaration of 'Command' hides function parameter
-..\sources\gnrctest.cpp(1781): note: see declaration of 'Command'
-int_cnt.cpp
-int_dsp.cpp
-logger.cpp
-..\sources\logger.cpp(527): warning C4459: declaration of 'dimLine' hides global declaration
-..\sources\logger.cpp(56): note: see declaration of 'dimLine'
-..\sources\logger.cpp(610): warning C4459: declaration of 'dimLine' hides global declaration
-..\sources\logger.cpp(56): note: see declaration of 'dimLine'
-main.cpp
-message.cpp
-msgbin.cpp
-msgstr.cpp
-msgtime.cpp
-randgen.cpp
-readtest.cpp
-simplist.cpp
-..\sources\simplist.cpp(508): warning C4091: 'static ': ignored on left of 'tpIdAction' when no variable is declared
-sioctrl.cpp
-sls_elem.cpp
-string.cpp
-time.cpp
-tracer.cpp
-verifier.cpp
-Microsoft (R) Incremental Linker Version 14.00.24210.0
+Microsoft (R) Incremental Linker Version 11.00.50727.1
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /OUT:Tst-smt.EXE 
